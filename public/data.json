@@ -1,0 +1,92 @@
+[
+  {
+    "playerName": "Shakib Al Hasan",
+    "playerImg": "https://example.com/shakib.jpg",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "batingStyle": "Left Hand",
+    "bowlingStyle": "Left Arm Orthodox",
+    "price": 12000000
+  },
+  {
+    "playerName": "Virat Kohli",
+    "playerImg": "https://example.com/virat.jpg",
+    "origin": "India",
+    "playerType": "Batsman",
+    "batingStyle": "Right Hand",
+    "bowlingStyle": "Right Arm Medium",
+    "price": 15000000
+  },
+  {
+    "playerName": "Babar Azam",
+    "playerImg": "https://example.com/babar.jpg",
+    "origin": "Pakistan",
+    "playerType": "Batsman",
+    "batingStyle": "Right Hand",
+    "bowlingStyle": "Right Arm Off Break",
+    "price": 13000000
+  },
+  {
+    "playerName": "Rashid Khan",
+    "playerImg": "https://example.com/rashid.jpg",
+    "origin": "Afghanistan",
+    "playerType": "Bowler",
+    "batingStyle": "Right Hand",
+    "bowlingStyle": "Right Arm Leg Break",
+    "price": 14000000
+  },
+  {
+    "playerName": "Jos Buttler",
+    "playerImg": "https://example.com/buttler.jpg",
+    "origin": "England",
+    "playerType": "Wicket-Keeper Batsman",
+    "batingStyle": "Right Hand",
+    "bowlingStyle": "Right Arm Medium",
+    "price": 14500000
+  },
+  {
+    "playerName": "Kane Williamson",
+    "playerImg": "https://example.com/williamson.jpg",
+    "origin": "New Zealand",
+    "playerType": "Batsman",
+    "batingStyle": "Right Hand",
+    "bowlingStyle": "Right Arm Off Break",
+    "price": 12500000
+  },
+  {
+    "playerName": "Pat Cummins",
+    "playerImg": "https://example.com/cummins.jpg",
+    "origin": "Australia",
+    "playerType": "Bowler",
+    "batingStyle": "Right Hand",
+    "bowlingStyle": "Right Arm Fast",
+    "price": 13500000
+  },
+  {
+    "playerName": "Andre Russell",
+    "playerImg": "https://example.com/russell.jpg",
+    "origin": "West Indies",
+    "playerType": "All-Rounder",
+    "batingStyle": "Right Hand",
+    "bowlingStyle": "Right Arm Fast",
+    "price": 11000000
+  },
+  {
+    "playerName": "Rohit Sharma",
+    "playerImg": "https://example.com/rohit.jpg",
+    "origin": "India",
+    "playerType": "Batsman",
+    "batingStyle": "Right Hand",
+    "bowlingStyle": "Right Arm Off Break",
+    "price": 13000000
+  },
+  {
+    "playerName": "Trent Boult",
+    "playerImg": "https://example.com/boult.jpg",
+    "origin": "New Zealand",
+    "playerType": "Bowler",
+    "batingStyle": "Left Hand",
+    "bowlingStyle": "Left Arm Fast",
+    "price": 11500000
+  }
+]
