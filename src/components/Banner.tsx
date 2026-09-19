@@ -2,7 +2,7 @@ import BannerPng from "../assets/banner-main.png";
 
 const Banner = () => {
   return (
-    <div className="bg-[#1E293B] max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center rounded-2xl h-[545px] justify-center  px-6  mt-6">
+    <div className="bg-[#1E293B] max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center rounded-2xl h-[545px] justify-center  px-6  mt-6 ">
 
       <div className="items-center justify-center">
   

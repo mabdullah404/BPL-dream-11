@@ -1,7 +1,8 @@
 
 
 export interface PlayersType {
-    playerName: string ;
+    ind: Key | null | undefined
+    playerName: string 
     playerImg: string
     origin: string
     playerType: string

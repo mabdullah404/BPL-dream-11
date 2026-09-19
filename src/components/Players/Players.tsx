@@ -1,6 +1,7 @@
 import { use } from "react";
 
 import type { PlayersType } from "../../types/PlayersType";
+import AvailablePlayers from "./AvailablePlayers";
 
 
 interface PlayersProps {
@@ -16,17 +17,23 @@ const Players = ({ playersPromise }: PlayersProps) => {
   console.log(players);
 
   return (
-    <div>
-      <h2>Players</h2>
+    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8"> 
 
-      {/* {players.map((player) => (
-        <div key={player.playerName}>
-          <h3>{player.playerName}</h3>
-          <p>{player.origin}</p>
-          <p>{player.playerType}</p>
-          <p>Price: {player.price}</p>
-        </div>
-      ))} */}
+       <div className="flex justify-between my-6">
+        <h1 className="font-bold text-2xl">Available Players</h1>
+
+
+        <div className="flex justify-between ">
+
+        <button className="btn btn-success">Available</button>
+        <button className="btn">Selected</button>
+
+        </div>       
+       </div>
+
+
+
+      <AvailablePlayers players= {players}></AvailablePlayers>
     </div>
   );
 };
