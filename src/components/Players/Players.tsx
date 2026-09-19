@@ -50,7 +50,16 @@ const Players = ({ playersPromise }: PlayersProps) => {
           onChoosePlayer={handleChoosePlayer}
         />
       ) : (
-        <Selectedplayers />
+        <Selectedplayers
+          selectedPlayers={selectedPlayers}
+          onRemovePlayer={(player) => {
+            setSelectedPlayers((previous) =>
+              previous.filter(
+                (selectedPlayer) => selectedPlayer.playerName !== player.playerName,
+              ),
+            );
+          }}
+        />
       )}
     </div>
   );
