@@ -6,7 +6,7 @@
     "playerType": "All-Rounder",
     "batingStyle": "Left Hand",
     "bowlingStyle": "Left Arm Orthodox",
-    "price": 12000000
+    "price": 1200
   },
   {
     "playerName": "Virat Kohli",
@@ -15,7 +15,7 @@
     "playerType": "Batsman",
     "batingStyle": "Right Hand",
     "bowlingStyle": "Right Arm Medium",
-    "price": 15000000
+    "price": 900
   },
   {
     "playerName": "Babar Azam",
@@ -24,7 +24,7 @@
     "playerType": "Batsman",
     "batingStyle": "Right Hand",
     "bowlingStyle": "Right Arm Off Break",
-    "price": 13000000
+    "price": 600
   },
   {
     "playerName": "Rashid Khan",
@@ -33,7 +33,7 @@
     "playerType": "Bowler",
     "batingStyle": "Right Hand",
     "bowlingStyle": "Right Arm Leg Break",
-    "price": 14000000
+    "price": 300
   },
   {
     "playerName": "Jos Buttler",
@@ -42,7 +42,7 @@
     "playerType": "Wicket-Keeper Batsman",
     "batingStyle": "Right Hand",
     "bowlingStyle": "Right Arm Medium",
-    "price": 14500000
+    "price": 900
   },
   {
     "playerName": "Kane Williamson",
@@ -51,7 +51,7 @@
     "playerType": "Batsman",
     "batingStyle": "Right Hand",
     "bowlingStyle": "Right Arm Off Break",
-    "price": 12500000
+    "price": 1100
   },
   {
     "playerName": "Pat Cummins",
@@ -60,7 +60,7 @@
     "playerType": "Bowler",
     "batingStyle": "Right Hand",
     "bowlingStyle": "Right Arm Fast",
-    "price": 13500000
+    "price": 400
   },
   {
     "playerName": "Andre Russell",
@@ -69,7 +69,7 @@
     "playerType": "All-Rounder",
     "batingStyle": "Right Hand",
     "bowlingStyle": "Right Arm Fast",
-    "price": 11000000
+    "price": 700
   },
   {
     "playerName": "Rohit Sharma",
@@ -78,7 +78,7 @@
     "playerType": "Batsman",
     "batingStyle": "Right Hand",
     "bowlingStyle": "Right Arm Off Break",
-    "price": 13000000
+    "price": 500
   },
   {
     "playerName": "Trent Boult",
@@ -87,6 +87,6 @@
     "playerType": "Bowler",
     "batingStyle": "Left Hand",
     "bowlingStyle": "Left Arm Fast",
-    "price": 11500000
+    "price": 400
   }
 ]

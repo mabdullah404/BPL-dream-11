@@ -1,54 +1,58 @@
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import NavBar from "./components/NavBar";
-import Banner from "./components/Banner";
-import Players from "./components/Players/Players";
+import AvailablePlayers from "./components/Players/AvailablePlayers";
 
 import type { PlayersType } from "./types/PlayersType";
-import User from "./components/User/User";
-import type { UserType } from "./types/UserType";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
+const App = () => {
+  const [coins, setCoins] = useState(3000);
+  const [players, setPlayers] = useState<PlayersType[]>([]);
+  const [selectedPlayers, setSelectedPlayers] = useState<PlayersType[]>([]);
 
-// API / JSON থেকে player data আনার function
-const playerFetch = async (): Promise<PlayersType[]> => {
-  const res = await fetch("/data.json");
+  useEffect(() => {
+    const loadPlayers = async () => {
+      const response = await fetch("/data.json");
+      const data: PlayersType[] = await response.json();
+      setPlayers(data);
+    };
 
-  const data: PlayersType[] = await res.json();
+    void loadPlayers();
+  }, []);
 
-  return data;
-};
+  const handleChoosePlayer = (player: PlayersType) => {
+    if (selectedPlayers.some((selectedPlayer) => selectedPlayer.playerName === player.playerName)) {
+      return;
+    }
 
-const userFetch = async():Promise<UserType[]> =>{
-  const res = await fetch('./user.json')
-  const data = await res.json();
-  return data ;
-}
+    if (coins < player.price) {
+      toast.error("Not enough coins!");
+      return;
+    }
 
-
-function App() {
-
-  // এখানে function call করলে একটি Promise পাওয়া যাবে
-  const playersPromise = playerFetch();
-
-
-  const userPromise = userFetch() ;
-
+    setCoins((previousCoins) => previousCoins - player.price);
+    setSelectedPlayers((previousPlayers) => [...previousPlayers, player]);
+    toast.success(`${player.playerName} selected successfully!`);
+  };
 
   return (
     <>
-      <NavBar />
+      <NavBar coins={coins} />
 
-      <Banner />
-
-      <Suspense fallback={<h2>Loading...</h2>}>
-
-        <Players  playersPromise={playersPromise} />
-
-        {/* <User userPromise={userPromise} /> */}
-
-      </Suspense>
+      <main className="max-w-7xl mx-auto px-4 py-8">
+        <Suspense fallback={<p>Loading players...</p>}>
+          <AvailablePlayers
+            players={players}
+            selectedPlayers={selectedPlayers}
+            onChoosePlayer={handleChoosePlayer}
+          />
+          <ToastContainer />
+        </Suspense>
+      </main>
     </>
   );
-}
+};
 
 export default App;
